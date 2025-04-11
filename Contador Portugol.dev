@@ -1,0 +1,65 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro operacao
+        real Primeiro_Numero, Segundo_Numero, Resultado_Equacao
+        
+        enquanto (verdadeiro)
+        {
+            escreva("Escolha a operação matemática:\n")
+            escreva("1 - Adição\n")
+            escreva("2 - Subtração\n")
+            escreva("3 - Multiplicação\n")
+            escreva("4 - Divisão\n")
+            escreva("Digite a opção desejada: ")
+
+            leia(operacao)
+
+            se (operacao < 1 ou operacao > 4)
+            {
+                escreva("Opção incorreta. Escolha apenas um número entre 1 e 4.\n\n")
+            }
+            senao
+            {
+
+                pare
+            }
+  
+        }
+        escreva("Digite o primeiro número: ")
+        leia(Primeiro_Numero)
+        escreva("Digite o segundo número: ")
+        leia(Segundo_Numero)
+
+        escolha (operacao)
+        {
+            caso 1:
+                Resultado_Equacao = Primeiro_Numero + Segundo_Numero
+                escreva("Resultado da adição: ", Resultado_Equacao)
+                pare
+
+            caso 2:
+                Resultado_Equacao = Primeiro_Numero - Segundo_Numero
+                escreva("Resultado da subtração: ", Resultado_Equacao)
+                pare
+
+            caso 3:
+                Resultado_Equacao = Primeiro_Numero * Segundo_Numero
+                escreva("Resultado da multiplicação: ", Resultado_Equacao)
+                pare
+
+            caso 4:
+                se (Segundo_Numero == 0)
+                {
+                    escreva("Erro! Divisão por zero não é permitida.")
+                }
+                senao
+                {
+                    Resultado_Equacao = Primeiro_Numero / Segundo_Numero
+                    escreva("Resultado da divisão: ", Resultado_Equacao)
+                }
+                pare
+        }
+    }
+}
