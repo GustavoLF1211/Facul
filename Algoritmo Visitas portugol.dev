@@ -1,0 +1,31 @@
+programa {
+  funcao inicio()
+   {
+    real venda[7],i,maiorVenda,menorVenda, maiorDia, menorDia,soma
+
+  para (i = 0; i <= 6; i++){ 
+  escreva("Digite o valor das vendas do dia "+(i+1)+": ")
+  leia(venda[i])
+  }
+    maiorVenda = venda[0]
+    menorVenda = venda[0]
+    maiorDia = 0
+    menorDia = 0
+    soma = 0
+
+   para ( i=0; i<=6; i++ ){
+   soma= soma+venda[i]
+      se (venda[i]>maiorVenda){
+      maiorVenda = venda[i]
+      maiorDia = i}
+    }
+      para ( i=0; i<=6; i++ ){
+      se (venda[i]<menorVenda){
+      menorVenda =venda[i]
+      menorDia =i }
+    }
+    escreva ("O dia com maior valor de venda foi: "+(maiorDia+1)+". Com "+maiorVenda+"R$" + "\n")
+    escreva ("O dia com menor valor de venda foi: "+(menorDia+1)+". Com "+menorVenda+"R$" + "\n" )
+    escreva ("O total de vendas da semana foi: "+soma+"R$")
+  }
+}
