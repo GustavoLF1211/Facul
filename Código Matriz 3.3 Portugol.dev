@@ -1,0 +1,84 @@
+programa {
+  funcao inicio()
+  {
+  inteiro i,j,soma,somaLinha1,somaLinha2,somaLinha3,somaColuna1,somaColuna2,somaColuna3,somaDiagonal
+  real matriz[3][3]
+  soma= 0
+  somaLinha1= 0
+  somaLinha2= 0
+  somaLinha3= 0
+  somaColuna1= 0
+  somaColuna2= 0
+  somaColuna3= 0
+  somaDiagonal= 0
+
+    para (i = 0; i <= 2; i++){
+    para (j = 0; j <= 2; j++){
+
+      escreva("Digite um número para a posição ["+ i+ "]["+ j+ "]: ")
+      leia (matriz[i][j])
+      }
+      }
+    escreva("\nA matriz digitada foi:\n")
+        para (i = 0; i <= 2; i++){
+          para (j = 0; j <= 2; j++){
+              escreva(matriz[i][j], " ")          
+  }
+  escreva("\n")
+        }
+      para (i = 0; i <= 2; i++){
+      para (j = 0; j <= 2; j++){
+      soma= soma+matriz[i][j]
+       }
+    }
+          escreva("A soma da matriz é de: "+soma+"\n")
+  escreva("\n")      
+      para (i = 0; i <= 0; i++){
+      para (j = 0; j <= 2; j++){
+      somaLinha1= somaLinha1+matriz[i][j]
+       }
+    }
+          escreva("A soma da primeira linha da matriz é de: "+somaLinha1)
+  escreva("\n")  
+      para (i = 1; i <= 1; i++){
+      para (j = 0; j <= 2; j++){
+      somaLinha2= somaLinha2+matriz[i][j]
+       }
+    }
+          escreva("A soma da segunda linha da matriz é de: "+somaLinha2)
+  escreva("\n")
+        para (i = 2; i <= 2; i++){
+      para (j = 0; j <= 2; j++){
+      somaLinha3= somaLinha3+matriz[i][j]
+       }
+    }
+          escreva("A soma da terceira linha da matriz é de: "+somaLinha3+"\n")
+  escreva("\n")
+      para (i = 0; i <= 2; i++){
+      para (j = 0; j <= 0; j++){
+      somaColuna1= somaColuna1+matriz[i][j]
+       }
+    }
+          escreva("A soma da primeira coluna da matriz é de: "+somaColuna1)
+  escreva("\n")  
+      para (i = 0; i <= 2; i++){
+      para (j = 1; j <= 1; j++){
+      somaColuna2= somaColuna2+matriz[i][j]
+       }
+    }
+          escreva("A soma da segunda coluna da matriz é de: "+somaColuna2)
+  escreva("\n")
+      para (i = 0; i <= 2; i++){
+      para (j = 2; j <= 2; j++){
+      somaColuna3= somaColuna3+matriz[i][j]
+       }
+    }
+          escreva("A soma da terceira coluna da matriz é de: "+somaColuna3+"\n")
+  escreva("\n")
+      para (i = 0; i <= 2; i++){
+      somaDiagonal= somaDiagonal+matriz[i][i]
+       }
+          escreva("A soma da diagonal principal da matriz é de: "+somaDiagonal)
+  escreva("\n")
+  }
+}
