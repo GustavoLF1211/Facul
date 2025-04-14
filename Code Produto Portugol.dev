@@ -1,0 +1,18 @@
+programa {
+  funcao inicio()
+  {
+  real valorAnterior,valorPosterior,diferencaValor
+      escreva("Qual era o valor do produto anteriormente? \n")
+       leia(valorAnterior)
+
+      escreva("Qual é o valor do produto agora? \n")
+        leia(valorPosterior)
+        
+          diferencaValor= valorAnterior - valorPosterior
+          
+          se(diferencaValor<0) {
+            escreva("O produto aumentou de preço, e agora esta com uma diferença de:\n R$:" + (diferencaValor * -1))}
+          senao {
+            escreva("O produto diminuiu de preço, e agora esta com uma diferença de:\n R$:" + diferencaValor)}
+    }
+  }
