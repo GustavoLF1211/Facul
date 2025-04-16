@@ -1,0 +1,15 @@
+programa {
+  funcao inicio()
+  {
+  real resposta, resultado
+resposta=1
+resultado=0
+
+      enquanto(resposta>=0){
+    escreva("Qual o número desejado? \n")
+      leia (resposta)
+  resultado += resposta
+    escreva("A soma dos números é de: "+resultado+ "\n")
+    }
+  }
+}
