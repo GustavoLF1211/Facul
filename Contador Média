@@ -1,0 +1,14 @@
+programa {
+  funcao inicio() 
+  {
+  real soma,example
+  soma= 0
+
+  para(example=0; example<=11; example++){
+    escreva("Escreva um número. \n")
+    leia (example)
+    soma+=example
+  }
+  escreva("Seu número é: "+soma/10)
+  }
+}
